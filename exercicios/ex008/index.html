@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatações de Textos</title>
+    <style>
+        mark{
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <h1>Principais Formatações</h1>
@@ -14,5 +19,18 @@
     <h2>Itálico / Ênfase</h2>
     <p>Nesta frase temos um termo em <i>itálico</i> usando a tag &lt; i &gt; (não semântica)</p>
     <p>Nestra frase temos um termo <em>enfatizado</em> usando a tag &lt; em &gt; (semântica)</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também um <mark style='background-color:rgb(219, 181, 255)'>texto marcado</mark> usando a tag &lt; mark &gt;</p> <!--isso aí de cima é css. só deve ser usado dessa forma para coisas pontuais-->
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag &lt; mark &gt;</p> <!--dessa forma o estilo está vindo lá do cabeçalho-->
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estou criando um texto <big>grande</big> e <small>pequeno</small> nesse parágrafo</p> <!--a tag big está obsoleta, ou seja, pode perder funcionalidade à qlqr momento-->
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar um texto como <del>excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar um texto como <ins>inserido</ins> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup> + 3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
 </body>
 </html>
