@@ -18,5 +18,22 @@
         <!--A ordem dos sources importa-->
         <img src="images/foto-g.png" alt="Foto grande">
     </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--<audio src="midia/happy-mistake.mp3" controls autoplay></audio>-->
+    <!--Essa é a maneira mais fácil, porém existem diversos tipos de mídia de áudio e compatibilidades dos navegadores, por isso é melhor fazer como segue o exemplo abaixo-->
+    <audio preload ="auto" controls autoplay loop>
+        <!--Preload auto -> só considera que o site terminou de carregar quando todo o áudio também for carregado por completo-->
+        <!--Preload metadata -> carrega os metadados do arquivo-->
+        <!--Preload none -> só começa a carregar o áudio quando o usuário clicar no botão de play-->
+        <!--controls -> mostrar uma ferramenta de controle do áudio ao usuário-->
+        <!--autoplay -> começar a tocar o áudio automaticamente-->
+        <!--loop -> recomeçar o áudio quando o mesmo terminar de tocar-->
+        <source src="midia/happy-mistake.mp3" type="audio/mp3">
+        <source src="midia/happy-mistake.mpeg" type="audio/mpeg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        <!--Esse último formato é, geralmente, bem mais pesado-->
+        <p>Infelizmente seu navegador não é compatível com os formatos de áudio que temos.<a href="midia/happy-mistake.mp3">Clique aqui</a> para baixar o arquivo em mp3</p>
+    </audio>
 </body>
 </html>
