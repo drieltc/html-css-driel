@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+    background-color: black;
+    color: azure;
+    font: normal 15px Arial;
+}
+h1{
+    color: aquamarine;
+    background-color: rgba(35, 39, 75, 0.493);
+}
+h2{
+    color: cyan;
+}
