@@ -11,8 +11,9 @@
     <h1>Imagens Dinâmicas</h1>
     <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
     <picture>
+        <!--maxwidth = imagem[i+1].width() + 50px-->
         <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
-        <!--Por padrão p vs code indica o min-width, mas eu to aprendendo com o max-width-->
+        <!--Por padrão o vs code indica o min-width, mas eu to aprendendo com o max-width-->
         <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
         <!--Se a largura for menor que 1050px, mostrar a foto-m-->
         <!--A ordem dos sources importa-->
