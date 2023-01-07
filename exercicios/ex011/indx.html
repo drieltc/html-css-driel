@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <!--Por padrão p vs code indica o min-width, mas eu to aprendendo com o max-width-->
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <!--Se a largura for menor que 1050px, mostrar a foto-m-->
+        <!--A ordem dos sources importa-->
+        <img src="images/foto-g.png" alt="Foto grande">
+    </picture>
+</body>
+</html>
