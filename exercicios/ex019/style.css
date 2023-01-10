@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*Filosoficamente, apenas 1 elemento pode ter um id. Se outro elemento também tiver o mesmo id, devemos mudar para classe*/
+
+/*
+    HTML | CSS
+     id  |  #
+    class|  .
+*/
+
+body{
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ /*Tabmbém poderia omitir esse h1 abaixo, aí tudo que tivesse id=principal seria afetado*/
+h1#principal{
+    text-align: center;
+    background-color: #3c805e;
+    color: white;
+}
+
+h1{
+    color: #1e402f;
+}
+
+h2{
+    color: #3c805e;
+}
+
+.basico{
+    color: #3c805e;
+    font-weight: bold;
+}
+
+.intermediario{
+    color: #80793c;
+}
+
+.avancado{
+    color: #803c3c;
+}
+
+.destaque{
+    background-color: rgba(197, 197, 96, 0.438);
+}
