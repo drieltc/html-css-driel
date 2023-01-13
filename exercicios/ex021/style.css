@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+}
+
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+header > nav{ /*nav dentro do header*/
+    background-color: rgb(165, 165, 165);
+    padding: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.315);
+}
+
+header > nav > a{ /*a dentro de nav dentro do header*/
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-right: 30px;
+}
+
+header > nav > a:hover{/*quadno passar pelo a dentro de nav dentro do header*/
+    color: white;
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+}
+
+article{
+    background-color: lightgray;
+    padding: 5px 10px 5px 10px;
+}
+
+article > aside{ /*aside dentro do article*/
+    background-color: rgb(165, 165, 165);
+}
+
+footer{
+    color:white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+footer > p{
+    margin: 0px;
+}
+
+div#bola{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius:50%
+}
