@@ -68,14 +68,14 @@ main{
     border-radius: 0px 0px 10px 10px;
 }
 
-main > h1{
-    font-family: android , Arial, Helvetica, sans-serif;
+main > article > h1{
+    font-family: android, Arial, Helvetica, sans-serif;
     color:#063D1E;
 }
 
-main > h2{
+main > article > h2{
     padding-left: 5px;
-    font-family: android , Arial, Helvetica, sans-serif;
+    font-family: android, Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 1.3em;
     color:#063D1E;
@@ -86,7 +86,7 @@ strong{
     color:#053319;
 }
 
-main > picture{
+main > article > picture{
     margin: auto;
 }
 
@@ -102,38 +102,37 @@ a{
     font-weight: bolder;
 }
 
-main > p > a::after{
+main > article > p > a::after{
     content: '🔗'
 }
 
-main > div > p > a::after{
+main > article > aside > p > a::after{
     content: '🔗'
 }
 
-main > div{
+main > article > aside{
     background-color: #c5ebd6;
     border-radius: 10px;
     padding-bottom: 3px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.479);
 }
 
-main > div > p{
+main > article > aside > p{
     padding: 0px 10px 0px 10px;
 }
 
-main > div > h3{
+main > article > aside > h3{
     background-color: #1A5C37;
     color: white;
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
 }
 
-main > div > ul > li::before{
+main > article > aside > ul > li::before{
     content: '🗸';
 }
 
 footer{
-    font-size: 0.8em;
     width:auto;
     margin: auto;
     margin-top: 10px;
@@ -141,4 +140,9 @@ footer{
     background-color: darkgreen;
     color: white;
     padding: 1px;
+}
+
+footer > p > a{
+    text-decoration: none;
+   color: white; 
 }
