@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('../fontes/BebasNeue-Regular.otf') format('opentype');
+    src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -18,34 +33,24 @@
     padding: 0px;
 }
 
-@font-face {
-    font-family: 'android';
-    src: url('../fontes/idroid.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'bebas';
-    src: url('../fontes/BebasNeue-Regular.otf') format('opentype');
-    src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 body{
     background-color: var(--cor0);
+
     margin: 0px;
+
     font-family: var(--fonte-padrao);
     font-size: medium;
     font-weight: 500;
+
     text-align: justify;
 }
 
 header{
-    text-align: center;
-    color: white;
     background-image: linear-gradient(180deg, var(--cor3), var(--cor5));
+    color: white;
+
+    text-align: center;
     padding-top: 20px;
 }
 
@@ -53,6 +58,7 @@ header > h1{
     font-family: var(--fonte-destaque), var(--fonte-padrao);
     font-weight: 100;
     font-size: 3em;
+
     margin: 20px;
 }
 
@@ -62,14 +68,16 @@ header > p{
 
 header > nav{
     margin-top: 40px;
-    text-align: left;
     padding-bottom: 9px;
+    text-align: left;
 }
 
 header > nav > a{
     color: white;
+
     text-decoration: none;
     font-weight: bold;
+    
     padding: 10px;
 
     transition: 0.2s;
@@ -82,9 +90,12 @@ header > nav > a:hover{
 
 main{
     max-width: 850px;
+
     background-color: white;
+
     margin: auto;
     padding: 20px;
+
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -95,10 +106,13 @@ main > article > h1{
 
 main > article > h2{
     padding-left: 5px;
+
     font-family: var(--fonte-android), var(--fonte-padrao);
     font-weight: 100;
     font-size: 1.3em;
+
     color:var(--cor4);
+
     background-image: linear-gradient(90deg, var(--cor0), white);
 }
 
@@ -107,12 +121,15 @@ strong{
 }
 
 main > article > picture{
+    display: block;
     margin: auto;
 }
 
 #video{
     max-width: 850px;
+    display: block;
     margin: auto;
+    
     background-color: var(--cor4);
 }
 
